@@ -4,14 +4,14 @@ fractal_growth_vg is a code which simulates the growth, limited by diffusion and
 
 The concentration field around the deposit is computed by taking into account the "convection" effect induced by the motion of growth front. To do this, the code solves an advection diffusion equation, using an iterative method, with a finite difference scheme. Starting from a flat deposit surface, at each iteration, the algorithm randomly selects a site on the deposit surface (growth on a lattice) from the distribution of the local mass flux (from the calculation of the concentration field). The calculation stops when the maximum height of the deposit reaches the desired value (hmax).
 The domain must be large enough so that growth is not influenced by the boundary conditions (lateral = periodic, upper edge = Dirichlet (~1), deposit surface = Dirichlet (0)). The upper edge is automatically positioned at a sufficiently high distance from the highest point of the deposit surface (domain_height parameter).
-The concentration matrix is solved by a fortran script loaded by python using numpy.f2py. The produced data (concentration and deposit matrices, parameters, etc.) are saved in a hdf5 file format.
+The concentration matrix is solved by a Fortran script loaded by python using numpy.f2py. The produced data (concentration and deposit matrices, parameters, etc.) are saved in a hdf5 file format.
 
 Requirements :
 - python 3 with numpy, scipy, matplotlib and h5py
-- linux or os with an intel proc (for f2py)
+- operating system able to run f2py (compilation of Fortran code)
 
 
 Files :
 - fractal_growth_vg.py (main program)
-- solve_adv_diff.f90 (fortran script for solving the advection diffusion equation, command to compile the fortran code : python -m numpy.f2py -c solve_adv_diff.f90 -m solve_adv_diff)
+- solve_adv_diff.f90 (Fortran script for solving the advection diffusion equation, command to compile the Fortran code : python -m numpy.f2py -c solve_adv_diff.f90 -m solve_adv_diff)
 - script_showlastim.py (script to show the last image of the fractal deposit generated)
