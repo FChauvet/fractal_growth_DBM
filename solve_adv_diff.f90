@@ -1,3 +1,12 @@
+! -----------------------------------------------------------------------------
+! Project: Fractal Growth DBM
+! File: fsolve_adv_diff.f90
+! Author: Fabien Chauvet
+! License: MIT (see LICENSE file for details)
+! Copyright (c) 2025 Fabien Chauvet
+! -----------------------------------------------------------------------------
+
+
 subroutine solve_adv_diff(Ld,AA,cin,pl,n,m,i0,iff,j0,jff,erreur_conv,c)
 
 !implicit none
