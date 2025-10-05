@@ -15,3 +15,6 @@ Files :
 - fractal_growth_vg.py (main program)
 - solve_adv_diff.f90 (Fortran script for solving the advection diffusion equation, command to compile the Fortran code : python -m numpy.f2py -c solve_adv_diff.f90 -m solve_adv_diff)
 - script_showlastim.py (script to show the last image of the fractal deposit generated)
+
+License: MIT (see LICENSE file for details)
+
