@@ -1,3 +1,13 @@
+# -----------------------------------------------------------------------------
+# Project: Fractal Growth DBM
+# File: script_showlastim.py
+# Author: Fabien Chauvet
+# License: MIT (see LICENSE file for details)
+# Copyright (c) 2025 Fabien Chauvet
+# -----------------------------------------------------------------------------
+
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import h5py
