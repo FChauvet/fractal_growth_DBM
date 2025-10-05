@@ -1,3 +1,13 @@
+# -----------------------------------------------------------------------------
+# Project: Fractal Growth DBM
+# File: fractal_growth_vg.py
+# Author: Fabien Chauvet
+# License: MIT (see LICENSE file for details)
+# Copyright (c) 2025 Fabien Chauvet
+# -----------------------------------------------------------------------------
+
+
+
 import numpy as np
 from scipy import ndimage
 import matplotlib.pyplot as plt
